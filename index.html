@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Collection</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>
+            <img src="images/capy/ctop.png" alt="Capybara" class="logo">
+            Listahan ni Kimu
+        </h1>
+        <p>A collection of movies worth watching.</p>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="🔍 Search a movie...">
+    </div>
+
+    <nav class="genres">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="horror">Horror</button>
+        <button data-filter="romcom">Romcom</button>
+        <button data-filter="comedy">Comedy</button>
+        <button data-filter="scifi">Sci-fi</button>
+        <button data-filter="mystery">Mystery</button>
+        <button data-filter="drama">Drama</button>
+    </nav>
+
+    <main>
+
+        <section class="genre-section" data-genre="horror">
+            <h2 class="genre-title">
+                <img src="images/capy/chorr.png" alt="Capybara" class="genre-capy">
+                Horror
+            </h2>
+
+            <div class="movie-list">
+
+                <a href="#" class="movie-card" data-movie="american">
+                    <h3>American Gods</h3>
+                    <p>US Movie • Adventure • 2015</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="deaths">
+                    <h3>Death's Game</h3>
+                    <p>Kdrama Series • Thriller • 2023</p>
+                </a>
+
+
+                <a href="#" class="movie-card" data-movie="exhuma">
+                    <h3>Exhuma</h3>
+                    <p>Kdrama Movie • Thriller • 2024</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="incarn">
+                    <h3>Incarnate</h3>
+                    <p>US Movie • Thriller • 2016</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="metamo">
+                    <h3>Metamorphosis</h3>
+                    <p>Kdrama Movie • Thriller • 2019</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="mieru">
+                    <h3>Mieruko-chan</h3>
+                    <p>Japanese Anime• Supernatural • 2021</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="zomba">
+                    <h3>My Zombabe</h3>
+                    <p>Filipino Movie • Fantasy • 2024</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="cellar">
+                    <h3>The Cellar</h3>
+                    <p>US Movie • Mystery • 2022</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="sadness">
+                    <h3>The Sadness</h3>
+                    <p>Taiwanese Movie • Thriller • 2021</p>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="genre-section" data-genre="romcom">
+            <h2 class="genre-title">
+                <img src="images/capy/crom.png" alt="Capybara" class="genre-capy">Romcom
+            </h2>
+
+            <div class="movie-list">
+
+                <a href="#" class="movie-card" data-movie="dayss">
+                    <h3>30 Days / Love Reset</h3>
+                    <p>Kdrama Movie • Amnesia • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="adoring">
+                    <h3>Adoring</h3>
+                    <p>Chinese Movie • Romance • 2024</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="andyet">
+                    <h3>And Yet, You Are So Sweet</h3>
+                    <p>Japanese Movie • Youth • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="bemelo">
+                    <h3>Be Melodramatic</h3>
+                    <p>Kdrama Series • Slice of Life • 2019</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="myfirst">
+                    <h3>Because This Is My First Life</h3>
+                    <p>Kdrama Series • Marriage • 2017</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="brideofthe">
+                    <h3>Bride of the Century</h3>
+                    <p>Kdrama Series • Family • 2014</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="dontdare">
+                    <h3>Don't Dare to Dream</h3>
+                    <p>Kdrama Series • Comedy • 2016</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="frankly">
+                    <h3>Frankly Speaking</h3>
+                    <p>Kdrama Series • Comedy • 2024</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="gaus">
+                    <h3>Gaus Electronics</h3>
+                    <p>Kdrama Series • Comedy • 2022</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="hogoo">
+                    <h3>Ho Goo's Love</h3>
+                    <p>Kdrama Series • Slice of Life • 2015</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="holdmy">
+                    <h3>Hold My Hand at Twilight</h3>
+                    <p>Japanese Series • Slice of Life • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="suckers">
+                    <h3>Love is for Suckers</h3>
+                    <p>Kdrama Series • Workplace • 2022</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="incontract">
+                    <h3>Love in Contract</h3>
+                    <p>Kdrama Series • Slice of Life • 2022</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="lovesong">
+                    <h3>Love Song for Illusion</h3>
+                    <p>Kdrama Series • Fantasy • 2024</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="lovestruck">
+                    <h3>Lovestruck in the City</h3>
+                    <p>Kdrama Series • Mockumentary • 2020</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="lovelyrunner">
+                    <h3>Lovely Runner</h3>
+                    <p>Kdrama Series • Fantasy • 2024</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="maninlove">
+                    <h3>Man in Love</h3>
+                    <p>Taiwan Movie • Melodrama • 2021</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="mrqueen">
+                    <h3>Mr. Queen</h3>
+                    <p>Kdrama Series • Body Swap • 2020</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="gfalien">
+                    <h3>My Girlfriend Is an Alien</h3>
+                    <p>Chinese Series • Fantasy • 2019</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="hmarriage">
+                    <h3>My Happy Marriage</h3>
+                    <p>Japanese Anime • Fantasy • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="mancupid">
+                    <h3>My Man Is Cupid</h3>
+                    <p>Kdrama Series • Fantasy • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="oneday">
+                    <h3>One Day</h3>
+                    <p>US Movie • Drama • 2024</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="secretdiary">
+                    <h3>Our Secret Diary</h3>
+                    <p>Japanese Movie • Youth• 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="pramook">
+                    <h3>Pramook</h3>
+                    <p>Thailand Series • Revenge • 2021</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="rainorshine">
+                    <h3>Rain or Shine</h3>
+                    <p>Kdrama Series • Melodrama • 2017</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="recordofyouth">
+                    <h3>Record of Youth</h3>
+                    <p>Thailand Series • Slice of Life • 2020</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="shewaspretty">
+                    <h3>She Was Pretty</h3>
+                    <p>Kdrama Series • Office Romance • 2015</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="theholiday">
+                    <h3>The Holiday</h3>
+                    <p>US Movie • Romance • 2006</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="samdal">
+                    <h3>Welcome to Samdal-ri</h3>
+                    <p>Kdrama Series • Slice of Life • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="weddingimpo">
+                    <h3>Wedding Impossible</h3>
+                    <p>Kdrama Series • Fake Marriage • 2024</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="genre-section" data-genre="comedy">
+            <h2 class="genre-title">
+                <img src="images/capy/ccom.png" alt="Capybara" class="genre-capy">Comedy
+            </h2>
+
+            <div class="movie-list">
+
+                <a href="#" class="movie-card" data-movie="godtroublesme">
+                    <h3>God Troubles Me</h3>
+                    <p>Chinese Anime • Comedy • 2019</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="mrsmaisel">
+                    <h3>Marvelous, Mrs. Maisel </h3>
+                    <p>US Series • Comedy • 2017</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="reno911">
+                    <h3>Reno 911!</h3>
+                    <p>US Series • Mockumentary • 2003</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="scandalmakers">
+                    <h3>Scandal Makers</h3>
+                    <p>Kdrama Movie • Family • 2008</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="somehowfamily">
+                    <h3>Somehow Family</h3>
+                    <p>Kdrama Series • Family • 2021</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="zookeper">
+                    <h3>Zookeeper</h3>
+                    <p>US Movie • Family • 2011</p>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="genre-section" data-genre="scifi">
+            <h2 class="genre-title">
+                <img src="images/capy/csci.png" alt="Capybara" class="genre-capy">Sci-fi
+            </h2>
+
+            <div class="movie-list">
+
+                <a href="#" class="movie-card" data-movie="colossal">
+                    <h3>Colossal</h3>
+                    <p>US Movie • Thriller • 2017</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="dark">
+                    <h3>Dark</h3>
+                    <p>German Series • Mystery • 2017</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="exmachina">
+                    <h3>Ex Machina</h3>
+                    <p>US Movie • Thriller • 2015</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="her">
+                    <h3>Her</h3>
+                    <p>US Movie • Romance • 2014</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="iammother">
+                    <h3>I Am Mother</h3>
+                    <p>US Movie • Thriller • 2019</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="irobot">
+                    <h3>I, Robot</h3>
+                    <p>US Movie • Thriller • 2004</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="junge">
+                    <h3>JUNG-E</h3>
+                    <p>Korean Movie • Thriller • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="leavetheworld">
+                    <h3>Leave the World Behind</h3>
+                    <p>US Movie • Thriller • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="motherandroid">
+                    <h3>Mother/Android</h3>
+                    <p>US Movie • Thriller • 2021</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="themitchells">
+                    <h3>The Mitchells vs. the Machines</h3>
+                    <p>US Movie • Adventure • 2021</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="tzones">
+                    <h3>The Twilight Zone</h3>
+                    <p>US Series • Horror • 2019</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="upload">
+                    <h3>Upload</h3>
+                    <p>US Series • Comedy • 2020</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="genre-section" data-genre="mystery">
+            <h2 class="genre-title">
+                <img src="images/capy/cmys.png" alt="Capybara" class="genre-capy">Mystery
+            </h2>
+
+            <div class="movie-list">
+
+                <a href="#" class="movie-card" data-movie="beforei">
+                    <h3>Before I Go to Sleep</h3>
+                    <p>US Movie • Thriller • 2014</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="bulgasal">
+                    <h3>Bulgasal</h3>
+                    <p>Kdrama Series • Supernatural • 2021</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="celebrity">
+                    <h3>Celebrity</h3>
+                    <p>Kdrama Series • Thriller • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="childrenoflesser">
+                    <h3>Children of a Lesser God</h3>
+                    <p>Kdrama Series • Thriller • 2018</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="connect">
+                    <h3>Connect</h3>
+                    <p>Kdrama Series • Sci-Fi • 2022</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="confessions">
+                    <h3>Confessions</h3>
+                    <p>Japanese Movie • Crime • 2010</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="detectivek">
+                    <h3>Detective K: Secret of the Living Dead</h3>
+                    <p>Kdrama Movie • Adventure • 2018</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="eatlovekill">
+                    <h3>Eat Love Kill</h3>
+                    <p>Kdrama Series • Fantasy • 2022</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="fromnowon">
+                    <h3>From Now on Showtime</h3>
+                    <p>Kdrama Series • Fantasy • 2022</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="gapdong">
+                    <h3>Gapdong</h3>
+                    <p>Kdrama Series • Thriller • 2014</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="innocence">
+                    <h3>Innocence</h3>
+                    <p>Kdrama Movie • Legal • 2020</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="maskgirl">
+                    <h3>Mask Girl</h3>
+                    <p>Kdrama Series • Crime • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="myhappyending">
+                    <h3>My Happy Ending</h3>
+                    <p>Kdrama Series • Thriller • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="oneordinaryday">
+                    <h3>One Ordinary Day</h3>
+                    <p>Kdrama Series • Crime • 2021</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="rebornrich">
+                    <h3>Reborn Rich</h3>
+                    <p>Kdrama Series • Fantasy • 2022</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="target">
+                    <h3>Target</h3>
+                    <p>Kdrama Movie • Thriller • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="agirlwhodeserves">
+                    <h3>The Killer: A Girl Who Deserves to Die</h3>
+                    <p>Kdrama Movie • Action • 2022</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="kingofthedesert">
+                    <h3>The King of the Desert</h3>
+                    <p>Kdrama Series • Drama• 2022</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="theoutsider">
+                    <h3>The Outsider - Stephen King</h3>
+                    <p>US Series • Horror • 2020</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="tomboftheriver">
+                    <h3>Tomb of the River</h3>
+                    <p>Kdrama Movie • Crime • 2021</p>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="genre-section" data-genre="drama">
+            <h2 class="genre-title">
+                <img src="images/capy/cdra.png" alt="Capybara" class="genre-capy">Drama
+            </h2>
+
+            <div class="movie-list">
+
+                <a href="#" class="movie-card" data-movie="afterthestorm">
+                    <h3>After the Storm</h3>
+                    <p>Japanese Movie • Drama • 2018</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="agency">
+                    <h3>Agency</h3>
+                    <p>Kdrama Series • Business • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="aloners">
+                    <h3>Aloners</h3>
+                    <p>Kdrama Movie • Slice of Life • 2021</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="bandofsisters">
+                    <h3>Band of Sisters</h3>
+                    <p>Kdrama Series • Revenge • 2017</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="boyhood">
+                    <h3>Boyhood</h3>
+                    <p>US Movie • Coming-of-Age • 2014</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="chicagotypewriter">
+                    <h3>Chicago Typewriter</h3>
+                    <p>Kdrama Movie • Fantasy • 2017</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="dearmyfriends">
+                    <h3>Dear My Friends</h3>
+                    <p>Kdrama Series • Melodrama • 2014</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="jangbori">
+                    <h3>Jang Bori Is Here!</h3>
+                    <p>Kdrama Movie • Slice of Life • 2021</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="twenties">
+                    <h3>My Twenties</h3>
+                    <p>Kdrama Series • Youth • 2014</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="onceuponaboyhood">
+                    <h3>Once Upon a Boyhood</h3>
+                    <p>Kdrama Series • Comedy • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="saikonokyoshi">
+                    <h3>Saiko no Kyoshi</h3>
+                    <p>Japanese Series • Mystery • 2023</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="schindler">
+                    <h3>Schindler's List</h3>
+                    <p>US Movie • Historical • 1994</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="artofracing">
+                    <h3>The Art of Racing in the Rain</h3>
+                    <p>US Movie • Family • 2019</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="atypicalfam">
+                    <h3>The Atypical Family</h3>
+                    <p>Kdrama Series • Fantasy • 2024</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="midnightstudio">
+                    <h3>The Midnight Studio</h3>
+                    <p>Kdrama Series • Romance • 2024</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="pursuitofhappyness">
+                    <h3>The Pursuit of Happyness</h3>
+                    <p>US Movie • Biography • 2006</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="soundofmagic">
+                    <h3>The Sound of Magic</h3>
+                    <p>Kdrama Series • Fantasy • 2022</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="upside">
+                    <h3>The Upside</h3>
+                    <p>US Movie • Comedy • 2019</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="tidalwave">
+                    <h3>Tidal Wave</h3>
+                    <p>Korean Movie • Action • 2009</p>
+                </a>
+
+                <a href="#" class="movie-card" data-movie="tokyogirl">
+                    <h3>Tokyo Girl</h3>
+                    <p>Japanese Movie • Romance • 2008</p>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <img id="modalPoster" src="" alt="Movie Poster">
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalGenre"></p>
+
+            <p id="modalSynopsis"></p>
+
+            <a id="modalTrailer" href="#" target="_blank">
+                ▶ Watch Trailer
+            </a>
+
+        </div>
+    </div>
+
+    <div class="side-panel">
+        <div class="side-tab">💜</div>
+
+        <div class="side-content">
+            <h3>LOID</h3>
+            <p>I'm stressed :&lt;</p>
+            <a href="help.html" class="help-btn">
+                HELP
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
