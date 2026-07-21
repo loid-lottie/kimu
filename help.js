@@ -41,7 +41,16 @@ const quotes = [
     "Particifaith - Kim 2026",
     "Two-handed Armor - Kim 2026",
     "Fast Forward - Kim 2026",
-    "Zeyf Zone - Kim 2026"
+    "Zeyf Zone - Kim 2026",
+    "Ano pangalan ni bear? - Kim 2026",
+    "Nagraraban sila - Kim 2026",
+    "Gaano ba ka corrupt yung soil dito na kailangan pa natin 'ahitin - Loid 2026",
+    "Ferpect farry - Loid 2026",
+    "Tinayuan lang ni Daren (Darius) - Loid 2026",
+    "Homemade Gownpowder - Kim 2026",
+    "Ikaw ba si veiger? Hindi, ikaw si Loid - Kim 2026",
+    "Ally healding - Kim 2026",
+    "You were never too much Kimchi remember that - Loid 2026",
 ];
 
 const video = document.getElementById("bgVideo");
